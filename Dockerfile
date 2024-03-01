@@ -17,13 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Start the app
-CMD ["rails", "server", "-b", "0.0.0.0"]
-
-
-
-tkn pipeline start ruby-postgres-pipeline \
-  --param git-url=https://github.com/vinutha18-m/argoCD.git \
-  --param git-revision=<your-git-revision> \
-  --param docker-hub-username=vinutha 18 \
-  --param image-name=postgres \
-  --param tag=latest
+CMD ["rails", "server", "-b", "0.0.0.0"
